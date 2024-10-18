@@ -15,7 +15,7 @@ Content:
 - specialised for Slovenian: recently-available GaMS models by [CJVT](https://huggingface.co/cjvt): [OPT_GaMS-1B-Chat](https://huggingface.co/cjvt/OPT_GaMS-1B-Chat) in [GaMS-1B-Chat](https://huggingface.co/cjvt/GaMS-1B-Chat), 1B models, developed as part of the [POVEJMO](https://povejmo.si/) project - bigger models will follow as the final products of this project
 - multilingual models that performed well on Slovenian and South Slavic languages (and dialects) based on the COPA task (see [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf)): [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1), [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl) and [Aya](https://huggingface.co/CohereForAI/aya-101)
 
-Based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf)), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian.
+Based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian.
 
 **Benchmarks**:
 
