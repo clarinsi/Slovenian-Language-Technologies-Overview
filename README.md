@@ -1,5 +1,7 @@
 # Slovenian Language Technologies Overview
-A collaborative overview of the knowledge on large language models (LLMs), speech technologies, and other NLP technologies for Slovenian language, provided by the [CLARIN Knowledge Centre for South Slavic languages CLASSLA](https://www.clarin.si/info/k-centre/).
+A collaborative overview of the knowledge on large language models (LLMs), speech technologies, and other natural-language processing (NLP) technologies for Slovenian language, provided by the [CLARIN Knowledge Centre for South Slavic languages CLASSLA](https://www.clarin.si/info/k-centre/).
+
+For an overview of freely-available datasets for Slovenian language, including general text collections, and training and test datasets for various NLP tasks, see the [Frequently-Asked Questions for Slovenian](https://www.clarin.si/info/k-centre/faq4slovene/), provided by CLASSLA. The FAQ also provides information about resources and technologies for linguistic annotation of Slovenian texts.
 
 Content:
 - [Instruction-Tuned LLMs for Slovenian](#instruction-tuned-llms-for-slovenian)
@@ -12,7 +14,7 @@ Content:
 ## Instruction-Tuned LLMs for Slovenian
 
 **Open-Source Models**:
-- specialised for Slovenian: recently-available GaMS models by [CJVT](https://huggingface.co/cjvt): [OPT_GaMS-1B-Chat](https://huggingface.co/cjvt/OPT_GaMS-1B-Chat) in [GaMS-1B-Chat](https://huggingface.co/cjvt/GaMS-1B-Chat), 1B models, developed as part of the [POVEJMO](https://povejmo.si/) project - bigger models will follow as the final products of this project
+- specialised for Slovenian: recently-available GaMS models by [CJVT](https://huggingface.co/cjvt): [OPT_GaMS-1B-Chat](https://huggingface.co/cjvt/OPT_GaMS-1B-Chat) in [GaMS-1B-Chat](https://huggingface.co/cjvt/GaMS-1B-Chat) ([Vreš et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf)), 1B models, developed as part of the [POVEJMO](https://povejmo.si/) project - bigger models will follow as the final products of this project
 - multilingual models that performed well on Slovenian and South Slavic languages (and dialects) based on the COPA task (see [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf)): [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1), [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl) and [Aya](https://huggingface.co/CohereForAI/aya-101)
 
 Based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian.
@@ -20,6 +22,7 @@ Based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclantholo
 **Benchmarks**:
 
 **Papers**:
+- [Generative Model for Less-Resourced Language with 1 Billion Parameters](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf) (Vreš et al., 2024)
 - [JSI and WüNLP at the DIALECT-COPA Shared Task: In-Context Learning From Just a Few Dialectal Examples Gets You Quite Far](https://aclanthology.org/2024.vardial-1.18.pdf) (Ljubešić et al., 2024)
 
 
@@ -67,7 +70,7 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 
 **Benchmarks**:
 - [Natural language inference](https://slobench.cjvt.si/leaderboard/view/9) benchmark at SloBench
-- [Slovene SuperGLUE](https://slobench.cjvt.si/leaderboard/view/3) benchmark at SloBench
+- [Slovene SuperGLUE](https://slobench.cjvt.si/leaderboard/view/3) benchmark at SloBench ([Žagar and Robnik-Šikonja, 2022](https://aclanthology.org/2022.lrec-1.221/))
 - [Named Entity Recognition](https://slobench.cjvt.si/leaderboard/view/12) benchmark at SloBench
 - [Universal Dependency Parsing](https://slobench.cjvt.si/leaderboard/view/11) benchmark at SloBench
 
@@ -76,11 +79,12 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 ##  BERT-like pretrained models for Slovenian
 
 **Monolingual / Smaller multilingual Models**:
-- [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta): monolingual Slovenian BERT-like model
-- [CroSloEngual BERT](https://huggingface.co/EMBEDDIA/crosloengual-bert): a trilingual model trained on Croatian, Slovenian, and English corpora
+- [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta): monolingual Slovenian BERT-like model, available also on [the CLARIN.SI repository](http://hdl.handle.net/11356/1397)
+- [CroSloEngual BERT](https://huggingface.co/EMBEDDIA/crosloengual-bert): a trilingual model trained on Croatian, Slovenian, and English corpora ([Ulčar and Robnik-Šikonja, 2020](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11))
 
 **Massively Multilingual Models**:
 - [Massively multilingual XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-large) model: frequently used for fine-tuning on Slovenian and multilingual data for various NLP tasks
-- [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, to be used for NLP tasks applied on parliamentary texts
+- [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
 
 **Papers**:
+- [FinEst BERT and CroSloEngual BERT: less is more in multilingual models](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11) (Ulčar and Robnik-Šikonja, 2020)
