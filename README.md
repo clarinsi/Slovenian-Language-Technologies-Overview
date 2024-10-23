@@ -4,26 +4,31 @@ A collaborative overview of the knowledge on large language models (LLMs), speec
 For an overview of freely-available datasets for Slovenian language, including general text collections, and training and test datasets for various NLP tasks, see the [Frequently-Asked Questions for Slovenian](https://www.clarin.si/info/k-centre/faq4slovene/), provided by CLASSLA. The FAQ also provides information about resources and technologies for linguistic annotation of Slovenian texts.
 
 Content:
-- [Instruction-Tuned LLMs for Slovenian](#instruction-tuned-llms-for-slovenian)
+- [Instruction-Tuned LLMs for Slovenian](#generative-models-(llms)-for-slovenian)
 - [Embedding Models & RAG for Slovenian](#embedding-models--rag-for-slovenian)
 - [Automatic Speech Recognition (ASR) for Slovenian](#automatic-speech-recognition-asr-for-slovenian)
 - [Machine Translation for Slovenian](#machine-translation-for-slovenian)
-- [Fine-Tuned Models for Slovenian](#fine-tuned-models-for-slovenian)
 - [BERT-like pretrained models for Slovenian](#bert-like-pretrained-models-for-slovenian)
+- [Fine-Tuned Models for Slovenian](#fine-tuned-models-for-slovenian)
 
-## Instruction-Tuned LLMs for Slovenian
+## Generative Models (LLMs) for Slovenian
 
-**Open-Source Models**:
+**Open-Source Instruction-Tuned Models**:
 - specialised for Slovenian: recently-available GaMS models by [CJVT](https://huggingface.co/cjvt): [OPT_GaMS-1B-Chat](https://huggingface.co/cjvt/OPT_GaMS-1B-Chat) in [GaMS-1B-Chat](https://huggingface.co/cjvt/GaMS-1B-Chat) ([Vreš et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf)), 1B models, developed as part of the [POVEJMO](https://povejmo.si/) project - bigger models will follow as the final products of this project
 - multilingual models that performed well on Slovenian and South Slavic languages (and dialects) based on the COPA task (see [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf)): [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1), [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl) and [Aya](https://huggingface.co/CohereForAI/aya-101)
+- Based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian.
 
-Based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian.
+**Other Decoder-Style Models**:
+- [t5-sl-large](https://huggingface.co/cjvt/t5-sl-large): a Slovene T5 model that can be used for generative tasks (summarization, text simplification, etc.) ([Ulčar and Robnik-Šikonja, 2023](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.932519/full))
 
 **Benchmarks**:
+- [SloBench evaluation for generative models](https://github.com/SloLama/slobench_evaluation): a framework that supports evaluation of generative models on SloBench tasks (using Slovene SuperGLUE and SI-NLI datasets).
+- [Slovenian LLM Evaluation](https://github.com/SloLama/slovenian-llm-eval): a framework that supports evaluation of generative models on the [Slovenian LLM Evaluation Dataset](https://huggingface.co/datasets/cjvt/slovenian-llm-eval). The dataset comprises multiple common English benchmarks (ARC Challenge, ARC Easy, BoolQ, HellaSwag, NQ Open, OpenBookQA, PIQA, TriviaQA, Winogrande) that were machine-translated to Slovenian.
 
 **Papers**:
 - [Generative Model for Less-Resourced Language with 1 Billion Parameters](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf) (Vreš et al., 2024)
 - [JSI and WüNLP at the DIALECT-COPA Shared Task: In-Context Learning From Just a Few Dialectal Examples Gets You Quite Far](https://aclanthology.org/2024.vardial-1.18.pdf) (Ljubešić et al., 2024)
+- [Sequence-to-sequence pretraining for a less-resourced Slovenian language](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.932519/full) (Ulčar and Robnik-Šikonja, 2023)
 
 
 ## Embedding Models & RAG for Slovenian
@@ -61,12 +66,27 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 
 **Papers**:
 
+##  BERT-like pretrained models for Slovenian
+
+**Monolingual / Smaller multilingual Models**:
+- [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta): monolingual Slovenian BERT-like model, available also on [the CLARIN.SI repository](http://hdl.handle.net/11356/1397)
+- [CroSloEngual BERT](https://huggingface.co/EMBEDDIA/crosloengual-bert): a trilingual model trained on Croatian, Slovenian, and English corpora ([Ulčar and Robnik-Šikonja, 2020](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11))
+- [SloBERTa-SlEng](https://huggingface.co/cjvt/sloberta-sleng): a Slovenian-English model based on SloBERTa, which was further pre-trained on the conversational English and Slovene corpora. The model is especially appropriate for tasks applied on conversational, non-standard, and slang language ([Yadav et al., 2024](https://arxiv.org/abs/2405.12929)) 
+
+**Massively Multilingual Models**:
+- [Massively multilingual XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-large) model: frequently used for fine-tuning on Slovenian and multilingual data for various NLP tasks
+- [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
+
+**Papers**:
+- [FinEst BERT and CroSloEngual BERT: less is more in multilingual models](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11) (Ulčar and Robnik-Šikonja, 2020)
+
 ## Fine-Tuned Models for Slovenian
 
 **Models & Papers**:
 - Sentiment in parliamentary texts: [Multilingual parliament sentiment regression model XLM-R-ParlaSent](https://huggingface.co/classla/xlm-r-parlasent) ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
 - Text genre prediction: [X-GENRE classifier - multilingual text genre classifier](https://huggingface.co/classla/xlm-roberta-base-multilingual-text-genre-classifier) ([Kuzman et al., 2023](https://www.mdpi.com/2504-4990/5/3/59))
 - News topic prediction: [Text classification model SloBERTa-Trendi-Topics 1.0](https://huggingface.co/cjvt/sloberta-trendi-topics) ([Kosem et al., 2023](https://journals.uni-lj.si/slovenscina2/article/download/12073/13790))
+- Hate speech classification in social media content: [Multilingual Hate Speech Classifier for Social Media Content](https://huggingface.co/Andrazp/multilingual-hate-speech-robacofi) ([Pelicon et al., 2021](https://peerj.com/articles/cs-559/))
 
 **Benchmarks**:
 - [Natural language inference](https://slobench.cjvt.si/leaderboard/view/9) benchmark at SloBench
@@ -75,16 +95,8 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 - [Universal Dependency Parsing](https://slobench.cjvt.si/leaderboard/view/11) benchmark at SloBench
 
 **Papers**:
-
-##  BERT-like pretrained models for Slovenian
-
-**Monolingual / Smaller multilingual Models**:
-- [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta): monolingual Slovenian BERT-like model, available also on [the CLARIN.SI repository](http://hdl.handle.net/11356/1397)
-- [CroSloEngual BERT](https://huggingface.co/EMBEDDIA/crosloengual-bert): a trilingual model trained on Croatian, Slovenian, and English corpora ([Ulčar and Robnik-Šikonja, 2020](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11))
-
-**Massively Multilingual Models**:
-- [Massively multilingual XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-large) model: frequently used for fine-tuning on Slovenian and multilingual data for various NLP tasks
-- [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
-
-**Papers**:
-- [FinEst BERT and CroSloEngual BERT: less is more in multilingual models](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11) (Ulčar and Robnik-Šikonja, 2020)
+- [Code-mixed Sentiment and Hate-speech Prediction](https://arxiv.org/abs/2405.12929) (Yadav et al., 2024)
+- [The ParlaSent Multilingual Training Dataset for Sentiment Identification in Parliamentary Proceedings](https://aclanthology.org/2024.lrec-main.1393/) (Mochtak et al., 2024)
+- [Automatic Genre Identification for Robust Enrichment of Massive Text Collections: Investigation of Classification Methods in the Era of Large Language Models](https://www.mdpi.com/2504-4990/5/3/59) (Kuzman et al., 2024)
+- [Investigating cross-lingual training for offensive language detection](https://peerj.com/articles/cs-559/) (Pelicon et al., 2021)
+- [Zero-Shot Learning for Cross-Lingual News Sentiment Classification](https://www.mdpi.com/2076-3417/10/17/5993) (Pelicon et al., 2020)
