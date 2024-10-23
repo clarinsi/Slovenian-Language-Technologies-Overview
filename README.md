@@ -4,7 +4,7 @@ A collaborative overview of the knowledge on large language models (LLMs), speec
 For an overview of freely-available datasets for Slovenian language, including general text collections, and training and test datasets for various NLP tasks, see the [Frequently-Asked Questions for Slovenian](https://www.clarin.si/info/k-centre/faq4slovene/), provided by CLASSLA. The FAQ also provides information about resources and technologies for linguistic annotation of Slovenian texts.
 
 Content:
-- [Instruction-Tuned LLMs for Slovenian](#generative-models-llms-for-slovenian)
+- [Generative Models (LLMs) for Slovenian](#generative-models-llms-for-slovenian)
 - [Embedding Models & RAG for Slovenian](#embedding-models--rag-for-slovenian)
 - [Automatic Speech Recognition (ASR) for Slovenian](#automatic-speech-recognition-asr-for-slovenian)
 - [Machine Translation for Slovenian](#machine-translation-for-slovenian)
