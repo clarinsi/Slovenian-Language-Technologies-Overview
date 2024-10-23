@@ -4,12 +4,13 @@ A collaborative overview of the knowledge on large language models (LLMs), speec
 For an overview of freely-available datasets for Slovenian language, including general text collections, and training and test datasets for various NLP tasks, see the [Frequently-Asked Questions for Slovenian](https://www.clarin.si/info/k-centre/faq4slovene/), provided by CLASSLA. The FAQ also provides information about resources and technologies for linguistic annotation of Slovenian texts.
 
 Content:
-- [Instruction-Tuned LLMs for Slovenian](#generative-models-(llms)-for-slovenian)
+- [Instruction-Tuned LLMs for Slovenian](#generative-models-llms-for-slovenian)
 - [Embedding Models & RAG for Slovenian](#embedding-models--rag-for-slovenian)
 - [Automatic Speech Recognition (ASR) for Slovenian](#automatic-speech-recognition-asr-for-slovenian)
 - [Machine Translation for Slovenian](#machine-translation-for-slovenian)
 - [BERT-like pretrained models for Slovenian](#bert-like-pretrained-models-for-slovenian)
 - [Fine-Tuned Models for Slovenian](#fine-tuned-models-for-slovenian)
+- [Other Language Technologies for Slovenian](#other-language-technologies-for-slovenian)
 
 ## Generative Models (LLMs) for Slovenian
 
@@ -93,6 +94,7 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 - [Slovene SuperGLUE](https://slobench.cjvt.si/leaderboard/view/3) benchmark at SloBench ([Žagar and Robnik-Šikonja, 2022](https://aclanthology.org/2022.lrec-1.221/))
 - [Named Entity Recognition](https://slobench.cjvt.si/leaderboard/view/12) benchmark at SloBench
 - [Universal Dependency Parsing](https://slobench.cjvt.si/leaderboard/view/11) benchmark at SloBench
+- [Semantic Change Detection Evaluation Dataset](https://www.clarin.si/repository/xmlui/handle/11356/1651) ([Pranjić et al., 2024](https://arxiv.org/abs/2402.16596))
 
 **Papers**:
 - [Code-mixed Sentiment and Hate-speech Prediction](https://arxiv.org/abs/2405.12929) (Yadav et al., 2024)
@@ -100,3 +102,8 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 - [Automatic Genre Identification for Robust Enrichment of Massive Text Collections: Investigation of Classification Methods in the Era of Large Language Models](https://www.mdpi.com/2504-4990/5/3/59) (Kuzman et al., 2024)
 - [Investigating cross-lingual training for offensive language detection](https://peerj.com/articles/cs-559/) (Pelicon et al., 2021)
 - [Zero-Shot Learning for Cross-Lingual News Sentiment Classification](https://www.mdpi.com/2076-3417/10/17/5993) (Pelicon et al., 2020)
+
+## Other Language Technologies for Slovenian
+
+**Tools**:
+- [A System for Semantic Change Detection for Slovenian](https://github.com/RSDO-DS3/SloSemanticShiftDetection?tab=readme-ov-file) ([Montariol et al., 2021](https://aclanthology.org/2021.naacl-main.369/))
