@@ -116,9 +116,10 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 - [Linguistic Processing Pipeline CLASSLA](https://github.com/clarinsi/classla): the CLASSLA pipeline provides processing of standard and non-standard (Internet) Slovene on the levels of tokenization and sentence splitting, part-of-speech tagging, lemmatisation, dependency parsing and named entity recognition ([Ljubešić et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH_2024-Ljubesic_Tercon_Doborovoljc.pdf)). Demo is available [here](https://clarin.si/oznacevalnik/eng). More information on tools for linguistic annotation of Slovenian texts is available [here](https://www.clarin.si/info/k-centre/faq4slovene/#2_Tools_to_annotate_Slovene_texts).
 - [Diacritic restoration tool for Croatian, Serbian and Slovene](https://github.com/clarinsi/redi) ([Ljubešić et al., 2016](https://aclanthology.org/L16-1573/))
 - [A System for Semantic Change Detection for Slovenian](https://github.com/RSDO-DS3/SloSemanticShiftDetection?tab=readme-ov-file) ([Montariol et al., 2021](https://aclanthology.org/2021.naacl-main.369/))
+- [Detection of Filled Pauses in Speech](https://huggingface.co/5roop/wav2vecbert2-filledPause)
 
 
 ## Authors
 The main author and curator of this document is Taja Kuzman.
 
-Special thanks also to people who contributed to the list: Domen Vreš, Matej Martinc
+Special thanks also to other contributors: Domen Vreš, Matej Martinc, Peter Rupnik
