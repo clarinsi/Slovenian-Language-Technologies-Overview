@@ -21,9 +21,9 @@ Content:
 ## Generative Models (LLMs) for Slovenian
 
 **Open-Source Instruction-Tuned Models**:
-- specialised for Slovenian: recently-available instruction-tuned GaMS model by [CJVT](https://huggingface.co/cjvt): [GaMS-1B-Chat](https://huggingface.co/cjvt/GaMS-1B-Chat) ([Vreš et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf)), 1B models, developed as part of the [POVEJMO](https://povejmo.si/) project - bigger models will follow as the final products of this project
+- specialised for Slovenian: recently-available instruction-tuned GaMS model by [CJVT](https://huggingface.co/cjvt): [GaMS-1B-Chat](https://huggingface.co/cjvt/GaMS-1B-Chat) ([Vreš et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf)): 1B model, developed as part of the [POVEJMO](https://povejmo.si/) project - bigger models will follow as the final products of this project
 - multilingual models that performed well on Slovenian and South Slavic languages (and dialects) based on the COPA task (see [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf)): [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1), [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl) and [Aya](https://huggingface.co/CohereForAI/aya-101)
-- Based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian.
+- based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian for classification tasks
 
 **Other Decoder-Style Models**:
 - [t5-sl-large](https://huggingface.co/cjvt/t5-sl-large): a Slovene T5 model that can be used for generative tasks (summarization, text simplification, etc.) ([Ulčar and Robnik-Šikonja, 2023](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.932519/full))
@@ -75,12 +75,12 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 
 ##  BERT-like pretrained models for Slovenian
 
-**Monolingual / Smaller multilingual Models**:
+**Monolingual / Smaller multilingual models**:
 - [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta): monolingual Slovenian BERT-like model, available also on [the CLARIN.SI repository](http://hdl.handle.net/11356/1397)
 - [CroSloEngual BERT](https://huggingface.co/EMBEDDIA/crosloengual-bert): a trilingual model trained on Croatian, Slovenian, and English corpora ([Ulčar and Robnik-Šikonja, 2020](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11))
-- [SloBERTa-SlEng](https://huggingface.co/cjvt/sloberta-sleng): a Slovenian-English model based on SloBERTa, which was further pre-trained on the conversational English and Slovene corpora. The model is especially appropriate for tasks applied on conversational, non-standard, and slang language ([Yadav et al., 2024](https://arxiv.org/abs/2405.12929)) 
+- [SloBERTa-SlEng](https://huggingface.co/cjvt/sloberta-sleng): a Slovenian-English model based on SloBERTa, which was further pre-trained on the conversational English and Slovene corpora. The model is especially appropriate for tasks applied on conversational, non-standard, and slang language ([Yadav et al., 2024](https://arxiv.org/abs/2405.12929)). 
 
-**Massively Multilingual Models**:
+**Massively multilingual models**:
 - [Massively multilingual XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-large) model: frequently used for fine-tuning on Slovenian and multilingual data for various NLP tasks
 - [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
 
