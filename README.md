@@ -86,6 +86,7 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 
 **Papers**:
 - [FinEst BERT and CroSloEngual BERT: less is more in multilingual models](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11) (Ulčar and Robnik-Šikonja, 2020)
+- [Evaluation of contextual embeddings on less-resourced languages](https://arxiv.org/abs/2107.10614) (Ulčar et al., 2021)
 
 ## Fine-Tuned Models for Slovenian
 
