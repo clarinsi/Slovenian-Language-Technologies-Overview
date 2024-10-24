@@ -76,7 +76,7 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 ##  BERT-like pretrained models for Slovenian
 
 **Monolingual / Smaller multilingual models**:
-- [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta): monolingual Slovenian BERT-like model, available also on [the CLARIN.SI repository](http://hdl.handle.net/11356/1397)
+- [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta): monolingual Slovenian BERT-like model, available also on [the CLARIN.SI repository](http://hdl.handle.net/11356/1397) ([Ulčar and Robnik-Šikonja](https://aile3.ijs.si/dunja/SiKDD2021/Papers/Ulcar+Robnik.pdf))
 - [CroSloEngual BERT](https://huggingface.co/EMBEDDIA/crosloengual-bert): a trilingual model trained on Croatian, Slovenian, and English corpora ([Ulčar and Robnik-Šikonja, 2020](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11))
 - [SloBERTa-SlEng](https://huggingface.co/cjvt/sloberta-sleng): a Slovenian-English model based on SloBERTa, which was further pre-trained on the conversational English and Slovene corpora. The model is especially appropriate for tasks applied on conversational, non-standard, and slang language ([Yadav et al., 2024](https://arxiv.org/abs/2405.12929)). 
 
