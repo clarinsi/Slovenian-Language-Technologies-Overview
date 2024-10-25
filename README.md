@@ -22,7 +22,13 @@ Content:
 
 **Open-Source Instruction-Tuned Models**:
 - specialised for Slovenian: recently-available instruction-tuned GaMS model by [CJVT](https://huggingface.co/cjvt): [GaMS-1B-Chat](https://huggingface.co/cjvt/GaMS-1B-Chat) ([Vreš et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf)): 1B model, developed as part of the [POVEJMO](https://povejmo.si/) project - bigger models will follow as the final products of this project
-- multilingual models that performed well on Slovenian and South Slavic languages (and dialects) based on the COPA task (see [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf)): [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1), [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl) and [Aya](https://huggingface.co/CohereForAI/aya-101)
+- multilingual models that performed well on Slovenian and South Slavic languages (and dialects) based on the COPA task (see [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf)):
+	- [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
+	- [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl)
+	- [Aya](https://huggingface.co/CohereForAI/aya-101)
+- other open-source instruction-tuned and base models that are often used for fine-tuning experiments in Slovenian language:
+	- Llama model families [Llama 3.1](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f) and [Llama 3.2](https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf): Llama 3.1 provides good results for Slovenian summarization,
+	- [Gemma](https://huggingface.co/google/gemma-7b) and instruction-tuned [Gemma-it](https://huggingface.co/google/gemma-7b-it) models: slightly worse results in Slovenian summarization.
 - based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian for classification tasks
 
 **Other Decoder-Style Models**:
@@ -122,4 +128,8 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 ## Authors
 The main author and curator of this document is Taja Kuzman.
 
-Special thanks also to other contributors: Domen Vreš, Matej Martinc, Peter Rupnik
+Special thanks also to other contributors:
+- Domen Vreš,
+- Matej Martinc,
+- Peter Rupnik,
+- Aleš Žagar.
