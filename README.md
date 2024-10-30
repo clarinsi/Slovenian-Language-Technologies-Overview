@@ -1,7 +1,7 @@
 # Slovenian Language Technologies Overview
 A collaborative overview of the knowledge on large language models (LLMs), speech technologies, and other natural-language processing (NLP) technologies for Slovenian language. The overview is curated by the [CLARIN Knowledge Centre for South Slavic languages CLASSLA](https://www.clarin.si/info/k-centre/).
 
-For an overview of freely-available datasets for Slovenian language, including general text collections, and training and test datasets for various NLP tasks, see the [Frequently-Asked Questions for Slovenian](https://www.clarin.si/info/k-centre/faq4slovene/), provided by CLASSLA. The FAQ also provides information about resources and technologies for linguistic annotation of Slovenian texts.
+For an overview of freely-available datasets for Slovenian language, including general **text collections, and training and test datasets** for various NLP tasks, see the [Frequently-Asked Questions for Slovenian](https://www.clarin.si/info/k-centre/faq4slovene/), provided by CLASSLA. The FAQ also provides information about resources and technologies for linguistic annotation of Slovenian texts.
 
 Main sites where you can find language technologies for Slovenian:
 - [CLARIN.SI repository](https://www.clarin.si/repository/xmlui/)
@@ -9,13 +9,13 @@ Main sites where you can find language technologies for Slovenian:
 - [CLASSLA organization profile at Hugging Face](https://huggingface.co/classla)
 
 Content:
-- [Generative Models (LLMs) for Slovenian](#generative-models-llms-for-slovenian)
-- [Embedding Models & RAG for Slovenian](#embedding-models--rag-for-slovenian)
-- [Automatic Speech Recognition (ASR) for Slovenian](#automatic-speech-recognition-asr-for-slovenian)
-- [Machine Translation for Slovenian](#machine-translation-for-slovenian)
+- [Generative models (LLMs) for Slovenian](#generative-models-llms-for-slovenian)
+- [Embedding models & RAG for Slovenian](#embedding-models--rag-for-slovenian)
+- [Automatic speech recognition (ASR) for Slovenian](#automatic-speech-recognition-asr-for-slovenian)
+- [Machine translation for Slovenian](#machine-translation-for-slovenian)
 - [BERT-like pretrained models for Slovenian](#bert-like-pretrained-models-for-slovenian)
-- [Fine-Tuned Models for Slovenian](#fine-tuned-models-for-slovenian)
-- [Other Language Technologies for Slovenian](#other-language-technologies-for-slovenian)
+- [Fine-tuned models for Slovenian](#fine-tuned-models-for-slovenian)
+- [Other language technologies for Slovenian](#other-language-technologies-for-slovenian)
 - [Authors](#authors)
 
 ## Generative Models (LLMs) for Slovenian
@@ -26,13 +26,13 @@ Content:
 	- [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
 	- [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl)
 	- [Aya](https://huggingface.co/CohereForAI/aya-101)
-- other open-source instruction-tuned and base models that are often used for fine-tuning experiments in Slovenian language:
+- other open-source instruction-tuned and base models that are often used by researchers for fine-tuning experiments in Slovenian language:
 	- Llama model families [Llama 3.1](https://huggingface.co/collections/meta-llama/llama-31-669fc079a0c406a149a5738f) and [Llama 3.2](https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf): Llama 3.1 provides good results for Slovenian summarization,
 	- [Gemma](https://huggingface.co/google/gemma-7b) and instruction-tuned [Gemma-it](https://huggingface.co/google/gemma-7b-it) models: slightly worse results in Slovenian summarization.
 - based on experience (e.g., [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf), using its predecesor GPT-4), [closed-source GPT-4o by OpenAI](https://openai.com/index/hello-gpt-4o/) still performs the best for Slovenian for classification tasks
 
 **Other Decoder-Style Models**:
-- [t5-sl-large](https://huggingface.co/cjvt/t5-sl-large): a Slovene T5 model that can be used for generative tasks (summarization, text simplification, etc.) ([Ulčar and Robnik-Šikonja, 2023](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.932519/full))
+- [t5-sl-small](https://huggingface.co/cjvt/t5-sl-small) and [t5-sl-large](https://huggingface.co/cjvt/t5-sl-large) ([Ulčar and Robnik-Šikonja, 2023](https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.932519/full)): Slovene T5 models that can be used for generative tasks (summarization, text simplification, etc.). The smaller model exhibits comparable performance to the larger model. However, in scenarios where extensive fine-tuning data is accessible, the larger model is expected to surpass the performance of the smaller model.
 
 **Benchmarks**:
 - [SloBench evaluation for generative models](https://github.com/SloLama/slobench_evaluation): a framework that supports evaluation of generative models on SloBench tasks (using Slovene SuperGLUE and SI-NLI datasets).
@@ -79,14 +79,15 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 
 **Papers**:
 
-##  BERT-like pretrained models for Slovenian
+##  BERT-Like Pretrained Models for Slovenian
 
-**Monolingual / Smaller multilingual models**:
+**Monolingual / Smaller Multilingual Models**:
 - [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta): monolingual Slovenian BERT-like model, available also on [the CLARIN.SI repository](http://hdl.handle.net/11356/1397) ([Ulčar and Robnik-Šikonja, 2021](https://aile3.ijs.si/dunja/SiKDD2021/Papers/Ulcar+Robnik.pdf))
 - [CroSloEngual BERT](https://huggingface.co/EMBEDDIA/crosloengual-bert): a trilingual model trained on Croatian, Slovenian, and English corpora ([Ulčar and Robnik-Šikonja, 2020](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11))
 - [SloBERTa-SlEng](https://huggingface.co/cjvt/sloberta-sleng): a Slovenian-English model based on SloBERTa, which was further pre-trained on the conversational English and Slovene corpora. The model is especially appropriate for tasks applied on conversational, non-standard, and slang language ([Yadav et al., 2024](https://arxiv.org/abs/2405.12929)). 
+- [sloberta-finetuned-dlib-1850-1919](https://huggingface.co/janezb/sloberta-finetuned-dlib-1850-1919): a SloBERTa model, fine-tuned on Slovenian texts from the period 1850-1919. The texts were collected from the Slovenian Digital Library (https://dlib.si).
 
-**Massively multilingual models**:
+**Massively Multilingual Models**:
 - [Massively multilingual XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-large) model: frequently used for fine-tuning on Slovenian and multilingual data for various NLP tasks ([Conneau et al., 2019](https://aclanthology.org/2020.acl-main.747.pdf))
 - [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
 
@@ -101,6 +102,9 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 - Text genre prediction: [X-GENRE classifier - multilingual text genre classifier](https://huggingface.co/classla/xlm-roberta-base-multilingual-text-genre-classifier) ([Kuzman et al., 2023](https://www.mdpi.com/2504-4990/5/3/59))
 - News topic prediction: [Text classification model SloBERTa-Trendi-Topics 1.0](https://huggingface.co/cjvt/sloberta-trendi-topics) ([Kosem et al., 2023](https://journals.uni-lj.si/slovenscina2/article/download/12073/13790))
 - Hate speech classification in social media content: [Multilingual Hate Speech Classifier for Social Media Content](https://huggingface.co/Andrazp/multilingual-hate-speech-robacofi) ([Pelicon et al., 2021](https://peerj.com/articles/cs-559/))
+- Prediction of commonsense descriptions in a natural language: [Slovenian commonsense reasoning model SloMET-ATOMIC 2020](
+http://hdl.handle.net/11356/1729) (also available on [GitHub](https://github.com/E3-JSI/model-SloMET-ATOMIC-2020)) ([Mladenić Grobelnik et al., 2022](https://aile3.ijs.si/dunja/SiKDD2022/Papers/SiKDD2022_paper_5674.pdf))
+- [Fine-tuned BERT model for semantic frame extraction in olfactory events](https://zenodo.org/records/10598306) ([Menini, 2024](https://aclanthology.org/2024.lrec-main.1273.pdf))
 
 **Benchmarks**:
 - [Natural language inference](https://slobench.cjvt.si/leaderboard/view/9) benchmark at SloBench
@@ -126,10 +130,15 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 
 
 ## Authors
-The main author and curator of this document is Taja Kuzman.
+The main author and curator of this document is: Taja Kuzman (Department of Knowledge Technologies, Jožef Stefan Institute).
 
 Special thanks also to other contributors:
-- Domen Vreš,
-- Matej Martinc,
-- Peter Rupnik,
-- Aleš Žagar.
+- Peter Rupnik (Department of Knowledge Technologies, Jožef Stefan Institute)
+- Matej Martinc (Department of Knowledge Technologies, Jožef Stefan Institute)
+- Erik Novak (Department for Artificial Intelligence, Jožef Stefan Institute)
+- Domen Vreš (Faculty of Computer and Information Science, University of Ljubljana)
+- Aleš Žagar (Faculty of Computer and Information Science, University of Ljubljana)
+
+<center>
+<img src="CLASSLA-k-centre-transparent-background.png" width="200" />
+</center>
