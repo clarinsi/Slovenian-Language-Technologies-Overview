@@ -11,10 +11,10 @@ Main sites where you can find language technologies for Slovenian:
 Content:
 - [Generative models (LLMs) for Slovenian](#generative-models-llms-for-slovenian)
 - [Embedding models & RAG for Slovenian](#embedding-models--rag-for-slovenian)
-- [Automatic speech recognition (ASR) for Slovenian](#automatic-speech-recognition-asr-for-slovenian)
 - [Machine translation for Slovenian](#machine-translation-for-slovenian)
 - [BERT-like pretrained models for Slovenian](#bert-like-pretrained-models-for-slovenian)
 - [Fine-tuned models for Slovenian](#fine-tuned-models-for-slovenian)
+- [Speech technologies for Slovenian](#speech-technologies-for-slovenian)
 - [Other language technologies for Slovenian](#other-language-technologies-for-slovenian)
 - [Authors](#authors)
 
@@ -53,19 +53,7 @@ Content:
 - RAG benchmark for retrieval capabilities of the RAG pipeline: [PandaChat-RAG Benchmark](https://github.com/TajaKuzman/pandachat-rag-benchmark)
 
 **Papers**:
-- [PandaChat-RAG: Towards the Benchmark for Slovenian RAG Applications](https://is.ijs.si/wp-content/uploads/2024/10/IS2024_Volume-A-DRAFT-1.pdf) (page 15) (Kuzman et al., 2024)
-
-## Automatic Speech Recognition (ASR) for Slovenian
-
-**Open-Source Models**:
-- [Slovene Conformer CTC BPE E2E Automated Speech Recognition model RSDO-DS2-ASR-E2E 2.0](
-http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project](https://rsdo.slovenscina.eu/en/speech-technologies), that is available on the CLARIN.SI repository and [GitHub](https://github.com/clarinsi/Slovene_ASR_e2e) ([demo](https://www.slovenscina.eu/en/razpoznavalnik)). Note: The maximal accepted audio duration is 300s.
-- [Whisper](https://huggingface.co/openai/whisper-large-v3) model: open-source OpenAI model that is massively multilingual.
-
-**Benchmarks**:
-- [SloBench Speech Recognition benchmark](https://slobench.cjvt.si/leaderboard/view/10)
- 
-**Papers**:
+- [PandaChat-RAG: Towards the Benchmark for Slovenian RAG Applications](https://is.ijs.si/wp-content/uploads/2024/10/SCAI_2024_paper_0538.pdf) (Kuzman et al., 2024)
 
 ## Machine Translation for Slovenian
 
@@ -102,6 +90,13 @@ http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project
 - Text genre prediction: [X-GENRE classifier - multilingual text genre classifier](https://huggingface.co/classla/xlm-roberta-base-multilingual-text-genre-classifier) ([Kuzman et al., 2023](https://www.mdpi.com/2504-4990/5/3/59))
 - News topic prediction: [Text classification model SloBERTa-Trendi-Topics 1.0](https://huggingface.co/cjvt/sloberta-trendi-topics) ([Kosem et al., 2023](https://journals.uni-lj.si/slovenscina2/article/download/12073/13790))
 - Hate speech classification in social media content: [Multilingual Hate Speech Classifier for Social Media Content](https://huggingface.co/Andrazp/multilingual-hate-speech-robacofi) ([Pelicon et al., 2021](https://peerj.com/articles/cs-559/))
+- Summarization of Slovenian texts: [SloSummarizer](https://github.com/RSDO-DS3/SloSummarizer) ([Žagar and Robnik-Šikonja, 2021](https://aclanthology.org/2021.hackashop-1.13/)). Summarization models are available [here](http://hdl.handle.net/11356/1751). Demo is available [here](https://www.slovenscina.eu/povzemanje).
+- Slovenian Question-Answering models: [SloQA](https://github.com/clarinsi/SloQA)
+- Named Entity Recognition: [PyTorch model for Slovenian Named Entity Recognition SloNER](http://hdl.handle.net/11356/1758). Demo is available [here](https://slovenscina.eu/prepoznavanje-imenskih-entitet). The source code is available on [GitHub](https://github.com/RSDO-DS3/SloNER).
+- Coreference Resolution for Slovenian: [PyTorch model for Slovenian Coreference Resolution](http://hdl.handle.net/11356/1773) ([Klemen and Žitnik, 2022](https://doiserbia.nb.rs/Article.aspx?ID=1820-02142100060K)). Demo is available [here](https://slovenscina.eu/odkrivanje-koreferencnosti). The source code is available on [GitHub](https://github.com/RSDO-DS3/SloCOREF).
+- Relation Extraction for Slovenian language: [SloREL tool](https://github.com/clarinsi/SloREL)
+- Word-sense disambiguation: [SloWSD model](https://github.com/clarinsi/SloWSD)
+- Annotation of incorrect spelling in Slovenian language: [SloBERTa Incorrect Spelling Annotator](https://huggingface.co/cjvt/SloBERTa-slo-word-spelling-annotator) 
 - Prediction of commonsense descriptions in a natural language: [Slovenian commonsense reasoning model SloMET-ATOMIC 2020](
 http://hdl.handle.net/11356/1729) (also available on [GitHub](https://github.com/E3-JSI/model-SloMET-ATOMIC-2020)) ([Mladenić Grobelnik et al., 2022](https://aile3.ijs.si/dunja/SiKDD2022/Papers/SiKDD2022_paper_5674.pdf))
 - [Fine-tuned BERT model for semantic frame extraction in olfactory events](https://zenodo.org/records/10598306) ([Menini, 2024](https://aclanthology.org/2024.lrec-main.1273.pdf))
@@ -120,16 +115,41 @@ http://hdl.handle.net/11356/1729) (also available on [GitHub](https://github.com
 - [Investigating cross-lingual training for offensive language detection](https://peerj.com/articles/cs-559/) (Pelicon et al., 2021)
 - [Zero-Shot Learning for Cross-Lingual News Sentiment Classification](https://www.mdpi.com/2076-3417/10/17/5993) (Pelicon et al., 2020)
 
+## Speech Technologies for Slovenian
+
+**Automatic Speech Recognition (ASR) Models**:
+- [Slovene Conformer CTC BPE E2E Automated Speech Recognition model RSDO-DS2-ASR-E2E 2.0](http://hdl.handle.net/11356/1737): ASR model, developed inside the [RSDO project](https://rsdo.slovenscina.eu/en/speech-technologies), that is available on the CLARIN.SI repository and [GitHub](https://github.com/clarinsi/Slovene_ASR_e2e) ([demo](https://www.slovenscina.eu/en/razpoznavalnik)). Note: The maximal accepted audio duration is 300s.
+- [Whisper](https://huggingface.co/openai/whisper-large-v3) model: open-source OpenAI model that is massively multilingual.
+
+**Other technologies**:
+- [Detection of Filled Pauses in Speech](https://huggingface.co/5roop/wav2vecbert2-filledPause)
+- [Slovenian Text Normalizator RSDO-DS2-NORM](http://hdl.handle.net/11356/1742), also available on [GitHub](https://github.com/clarinsi/Slovene_normalizator)
+- [Slovenian Text Denormalizator RSDO-DS2-DENORM](http://hdl.handle.net/11356/1743), also available on [GitHub](https://github.com/clarinsi/Slovene_denormalizator)
+- [Slovenian Grapheme-to-Phoneme Converter](https://github.com/clarinsi/rsdo_gfp_v2)
+- [Slovenian Punctuation and Capitalisation model RSDO-DS2-P&C](http://hdl.handle.net/11356/1735), code for an API service available on [GitHub](https://github.com/clarinsi/Slovene_punctuator)
+- [Speech Denoising Tool](https://github.com/clarinsi/rsdo_aknorm_v2)
+
+**Benchmarks**:
+- [SloBench Speech Recognition benchmark](https://slobench.cjvt.si/leaderboard/view/10)
+
+
 ## Other Language Technologies for Slovenian
 
 **Tools**:
 - [Linguistic Processing Pipeline CLASSLA](https://github.com/clarinsi/classla): the CLASSLA pipeline provides processing of standard and non-standard (Internet) Slovene on the levels of tokenization and sentence splitting, part-of-speech tagging, lemmatisation, dependency parsing and named entity recognition ([Ljubešić et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH_2024-Ljubesic_Tercon_Doborovoljc.pdf)). Demo is available [here](https://clarin.si/oznacevalnik/eng). More information on tools for linguistic annotation of Slovenian texts is available [here](https://www.clarin.si/info/k-centre/faq4slovene/#2_Tools_to_annotate_Slovene_texts).
 - [Diacritic restoration tool for Croatian, Serbian and Slovene](https://github.com/clarinsi/redi) ([Ljubešić et al., 2016](https://aclanthology.org/L16-1573/))
 - [A System for Semantic Change Detection for Slovenian](https://github.com/RSDO-DS3/SloSemanticShiftDetection?tab=readme-ov-file) ([Montariol et al., 2021](https://aclanthology.org/2021.naacl-main.369/))
-- [Detection of Filled Pauses in Speech](https://huggingface.co/5roop/wav2vecbert2-filledPause)
 
 
 ## Authors
+
+This document is supported by [CLASSLA](https://www.clarin.si/info/k-centre/), the CLARIN knowledge centre for South Slavic languages. For any questions or suggestions related to this document, write to CLASSLA helpdesk: classla@clarin.si.
+
+To be informed of new resources, technologies, events and projects for South Slavic languages:
+- you can subscribe to the [mailing list](https://mailman.ijs.si/mailman/listinfo/classla)
+- follow CLARIN.SI on [X](https://x.com/ClarinSlovenia) and [LinkedIn](https://www.linkedin.com/company/clarin-si)
+- join the [Discord group "Slovenska skupnost za jezikovne vire in tehnologije"](https://discord.com/invite/vQDRpGMU7C)
+
 The main author and curator of this document is: Taja Kuzman (Department of Knowledge Technologies, Jožef Stefan Institute).
 
 Special thanks also to other contributors:
