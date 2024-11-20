@@ -143,7 +143,7 @@ http://hdl.handle.net/11356/1729) (also available on [GitHub](https://github.com
 
 ## Authors
 
-This document is supported by [CLASSLA](https://www.clarin.si/info/k-centre/), the CLARIN knowledge centre for South Slavic languages. For any questions or suggestions related to this document, write to CLASSLA helpdesk: classla@clarin.si.
+This document is supported by [CLASSLA](https://www.clarin.si/info/k-centre/), the CLARIN knowledge centre for South Slavic languages. For any questions or suggestions related to this document, write to CLASSLA helpdesk: helpdesk.classla@clarin.si.
 
 To be informed of new resources, technologies, events and projects for South Slavic languages:
 - you can subscribe to the [mailing list](https://mailman.ijs.si/mailman/listinfo/classla)
