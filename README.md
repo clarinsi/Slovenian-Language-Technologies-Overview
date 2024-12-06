@@ -128,6 +128,9 @@ http://hdl.handle.net/11356/1729) (also available on [GitHub](https://github.com
 - [Slovenian Grapheme-to-Phoneme Converter](https://github.com/clarinsi/rsdo_gfp_v2)
 - [Slovenian Punctuation and Capitalisation model RSDO-DS2-P&C](http://hdl.handle.net/11356/1735), code for an API service available on [GitHub](https://github.com/clarinsi/Slovene_punctuator)
 - [Speech Denoising Tool](https://github.com/clarinsi/rsdo_aknorm_v2)
+- [Slovenian Speech and Transcription Alignment using Montreal Forced Aligner](https://github.com/jan3zk/forced_alignment)
+- [Slovenian Speech Anonymization](https://github.com/jan3zk/audio_anonymizer)
+- [Speech Audio Validation](https://github.com/jan3zk/audio_validation)
 
 **Benchmarks**:
 - [SloBench Speech Recognition benchmark](https://slobench.cjvt.si/leaderboard/view/10)
@@ -158,6 +161,7 @@ Special thanks also to other contributors:
 - Erik Novak (Department for Artificial Intelligence, Jožef Stefan Institute)
 - Domen Vreš (Faculty of Computer and Information Science, University of Ljubljana)
 - Aleš Žagar (Faculty of Computer and Information Science, University of Ljubljana)
+- Simon Dobrišek (Faculty of Electrical Engineering, University of Ljubljana)
 
 <center>
 <img src="CLASSLA-k-centre-transparent-background.png" width="200" />
