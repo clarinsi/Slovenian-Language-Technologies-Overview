@@ -140,8 +140,10 @@ http://hdl.handle.net/11356/1729) (also available on [GitHub](https://github.com
 
 **Tools**:
 - [Linguistic Processing Pipeline CLASSLA](https://github.com/clarinsi/classla): the CLASSLA pipeline provides processing of standard and non-standard (Internet) Slovene on the levels of tokenization and sentence splitting, part-of-speech tagging, lemmatisation, dependency parsing and named entity recognition ([Ljubešić et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH_2024-Ljubesic_Tercon_Doborovoljc.pdf)). Demo is available [here](https://clarin.si/oznacevalnik/eng). More information on tools for linguistic annotation of Slovenian texts is available [here](https://www.clarin.si/info/k-centre/faq4slovene/#2_Tools_to_annotate_Slovene_texts).
+- [Trankit model for linguistic processing of written and spoken Slovenian](http://hdl.handle.net/11356/1997): the Slovenian Transformer-based Trankit model can be used inside the [Trankit library](https://pypi.org/project/trankit/) which is a light-weight Transformer-based Python Toolkit for multilingual natural language processing. The Slovenian Trankit model is based on the XLM-RoBERTa model and supports sentence segmentation, tokenization, lemmatization, language-specific morphological annotation ([MULTEXT-East morphosyntactic tags](https://wiki.cjvt.si/books/04-multext-east-morphosyntax)), as well as universal part-of-speech tagging, morphological features, and dependency parsing in accordance with the [Universal Dependencies annotation scheme](https://wiki.cjvt.si/books/07-universal-dependencies-FPQ). The documentation on how to use the model is available [here](https://github.com/clarinsi/trankit-train).
 - [Diacritic restoration tool for Croatian, Serbian and Slovene](https://github.com/clarinsi/redi) ([Ljubešić et al., 2016](https://aclanthology.org/L16-1573/))
-- [Corpus extraction tool LIST](http://hdl.handle.net/11356/1964) ([Ključevšek et al., 2018](https://zenodo.org/records/13957951)) for extraction of lists of characters, sub-words, words and word sets from text corpora (the instruction manual is available [here](http://slovnica.ijs.si/wp-content/uploads/2019/11/LIST_prirocnik_1.0.pdf))
+- [Corpus extraction tool LIST](http://hdl.handle.net/11356/1964) ([Ključevšek et al., 2018](https://zenodo.org/records/13957951)) for extraction of lists of characters, sub-words, words and word sets from text corpora (the instruction manual is available [here](http://slovnica.ijs.si/wp-content/uploads/2019/11/LIST_prirocnik_1.0.pdf)).
+- [Treebank analysis tool STARK](https://github.com/clarinsi/STARK) for extraction and analysis of different types of syntactic structures (trees) from parsed corpora (treebanks). The demo is available [here](https://orodja.cjvt.si/stark/).
 - [A System for Semantic Change Detection for Slovenian](https://github.com/RSDO-DS3/SloSemanticShiftDetection?tab=readme-ov-file) ([Montariol et al., 2021](https://aclanthology.org/2021.naacl-main.369/))
 
 
@@ -163,6 +165,7 @@ Special thanks also to other contributors:
 - Domen Vreš (Faculty of Computer and Information Science, University of Ljubljana)
 - Aleš Žagar (Faculty of Computer and Information Science, University of Ljubljana)
 - Simon Dobrišek (Faculty of Electrical Engineering, University of Ljubljana)
+- Kaja Dobrovoljc (Faculty of Arts, University of Ljubljana & Department for Artificial Intelligence, Jožef Stefan Institute)
 
 <center>
 <img src="CLASSLA-k-centre-transparent-background.png" width="200" />
