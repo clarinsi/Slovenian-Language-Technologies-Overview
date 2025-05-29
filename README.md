@@ -21,7 +21,9 @@ Content:
 ## Generative Models (LLMs) for Slovenian
 
 **Open-Source Instruction-Tuned Models**:
-- specialised for Slovenian: recently-available instruction-tuned GaMS model by [CJVT](https://huggingface.co/cjvt): [GaMS-1B-Chat](https://huggingface.co/cjvt/GaMS-1B-Chat) ([Vreš et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf)): 1B model, developed as part of the [POVEJMO](https://povejmo.si/) project - bigger models will follow as the final products of this project
+- specialised for Slovenian:
+  	- instruction-tuned [GaMS](https://huggingface.co/collections/cjvt/gams-680a34e63dc760cd6fdc604c) models ([Vreš et al., 2024](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf)) by [CJVT](https://huggingface.co/cjvt): 2B, 9B and 28B models, developed as part of the [POVEJMO](https://povejmo.si/) project. The GaMS-9B-Instruct model can be tested [here](https://povejmo.si/klepet/).
+  	- instruction-tuned [Zlatorog-12B-Instruct-Beta](https://huggingface.co/zID4si/Zlatorog-12B-Instruct-Beta) model (Savodnik T., 2025) based on the Mistral Nemo 12B model. The model has been optimized for both language understanding and function-calling scenarios.
 - multilingual models that performed well on Slovenian and South Slavic languages (and dialects) based on the COPA task (see [paper by Ljubešić et al., 2024](https://aclanthology.org/2024.vardial-1.18.pdf)):
 	- [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)
 	- [mt0-xxl](https://huggingface.co/bigscience/mt0-xxl)
