@@ -40,6 +40,9 @@ Content:
 - [SloBench evaluation for generative models](https://github.com/SloLama/slobench_evaluation): a framework that supports evaluation of generative models on SloBench tasks (using Slovene SuperGLUE and SI-NLI datasets).
 - [Slovenian LLM Evaluation](https://github.com/SloLama/slovenian-llm-eval): a framework that supports evaluation of generative models on the [Slovenian LLM Evaluation Dataset](https://huggingface.co/datasets/cjvt/slovenian-llm-eval). The dataset comprises multiple common English benchmarks (ARC Challenge, ARC Easy, BoolQ, HellaSwag, NQ Open, OpenBookQA, PIQA, TriviaQA, Winogrande) that were machine-translated to Slovenian.
 
+**Verification and Anti-Hallucination Frameworks**:
+- [Verification-Before-Assertion](https://github.com/AtmaOVictu/verification-before-assertion) (Pintarič, 2026): a working claim-verification regime for Slovenian LLM output — every word used as "measured" carries a sourced dictionary entry (⊢, SSKJ/Fran) or is explicitly marked ⚠; model failure modes (invented "hybrid" words, unverified etymologies, corrupted citations) are recorded in an append-only register of named falls. Includes a demo notebook applying the regime to LLM output in Slovenian. Methodology contributed to Mistral's cookbook as [mistralai/cookbook#420](https://github.com/mistralai/cookbook/pull/420).
+
 **Papers**:
 - [Generative Model for Less-Resourced Language with 1 Billion Parameters](https://www.sdjt.si/wp/wp-content/uploads/2024/09/JT-DH-2024_Vres_Bozic_Potocnik_Martincic_Robnik.pdf) (Vreš et al., 2024)
 - [JSI and WüNLP at the DIALECT-COPA Shared Task: In-Context Learning From Just a Few Dialectal Examples Gets You Quite Far](https://aclanthology.org/2024.vardial-1.18.pdf) (Ljubešić et al., 2024)
@@ -54,6 +57,9 @@ Content:
 **Benchmarks**:
 - RAG benchmark for retrieval capabilities of the RAG pipeline: [PandaChat-RAG Benchmark](https://github.com/TajaKuzman/pandachat-rag-benchmark)
 
+**Verification and Anti-Hallucination Frameworks**:
+- [Verification-Before-Assertion](https://github.com/AtmaOVictu/verification-before-assertion) (Pintarič, 2026): a working claim-verification regime for Slovenian LLM output — every word used as "measured" carries a sourced dictionary entry (⊢, SSKJ/Fran) or is explicitly marked ⚠; model failure modes (invented "hybrid" words, unverified etymologies, corrupted citations) are recorded in an append-only register of named falls. Includes a demo notebook applying the regime to LLM output in Slovenian. Methodology contributed to Mistral's cookbook as [mistralai/cookbook#420](https://github.com/mistralai/cookbook/pull/420).
+
 **Papers**:
 - [PandaChat-RAG: Towards the Benchmark for Slovenian RAG Applications](https://is.ijs.si/wp-content/uploads/2024/10/SCAI_2024_paper_0538.pdf) (Kuzman et al., 2024)
 
@@ -66,6 +72,9 @@ Content:
 
 **Benchmarks**:
 - SloBench Machine Translation benchmarks: [Slovenian-to-English](https://slobench.cjvt.si/leaderboard/view/7) and [English-to-Slovenian](https://slobench.cjvt.si/leaderboard/view/8)
+
+**Verification and Anti-Hallucination Frameworks**:
+- [Verification-Before-Assertion](https://github.com/AtmaOVictu/verification-before-assertion) (Pintarič, 2026): a working claim-verification regime for Slovenian LLM output — every word used as "measured" carries a sourced dictionary entry (⊢, SSKJ/Fran) or is explicitly marked ⚠; model failure modes (invented "hybrid" words, unverified etymologies, corrupted citations) are recorded in an append-only register of named falls. Includes a demo notebook applying the regime to LLM output in Slovenian. Methodology contributed to Mistral's cookbook as [mistralai/cookbook#420](https://github.com/mistralai/cookbook/pull/420).
 
 **Papers**:
 
@@ -80,6 +89,9 @@ Content:
 **Massively Multilingual Models**:
 - [Massively multilingual XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-large) model: frequently used for fine-tuning on Slovenian and multilingual data for various NLP tasks ([Conneau et al., 2019](https://aclanthology.org/2020.acl-main.747.pdf))
 - [Multilingual parliamentary model XLM-R-parla](https://huggingface.co/classla/xlm-r-parla): XLM-RoBERTa model, additionally pretrained on parliamentary data, including Slovenian, to be used for NLP tasks applied on parliamentary texts ([Mochtak et al., 2024](https://aclanthology.org/2024.lrec-main.1393/))
+
+**Verification and Anti-Hallucination Frameworks**:
+- [Verification-Before-Assertion](https://github.com/AtmaOVictu/verification-before-assertion) (Pintarič, 2026): a working claim-verification regime for Slovenian LLM output — every word used as "measured" carries a sourced dictionary entry (⊢, SSKJ/Fran) or is explicitly marked ⚠; model failure modes (invented "hybrid" words, unverified etymologies, corrupted citations) are recorded in an append-only register of named falls. Includes a demo notebook applying the regime to LLM output in Slovenian. Methodology contributed to Mistral's cookbook as [mistralai/cookbook#420](https://github.com/mistralai/cookbook/pull/420).
 
 **Papers**:
 - [FinEst BERT and CroSloEngual BERT: less is more in multilingual models](https://link.springer.com/chapter/10.1007/978-3-030-58323-1_11) (Ulčar and Robnik-Šikonja, 2020)
@@ -109,6 +121,9 @@ http://hdl.handle.net/11356/1729) (also available on [GitHub](https://github.com
 - [Named Entity Recognition](https://slobench.cjvt.si/leaderboard/view/12) benchmark at SloBench
 - [Universal Dependency Parsing](https://slobench.cjvt.si/leaderboard/view/11) benchmark at SloBench
 - [Semantic Change Detection Evaluation Dataset](https://www.clarin.si/repository/xmlui/handle/11356/1651) ([Pranjić et al., 2024](https://arxiv.org/abs/2402.16596))
+
+**Verification and Anti-Hallucination Frameworks**:
+- [Verification-Before-Assertion](https://github.com/AtmaOVictu/verification-before-assertion) (Pintarič, 2026): a working claim-verification regime for Slovenian LLM output — every word used as "measured" carries a sourced dictionary entry (⊢, SSKJ/Fran) or is explicitly marked ⚠; model failure modes (invented "hybrid" words, unverified etymologies, corrupted citations) are recorded in an append-only register of named falls. Includes a demo notebook applying the regime to LLM output in Slovenian. Methodology contributed to Mistral's cookbook as [mistralai/cookbook#420](https://github.com/mistralai/cookbook/pull/420).
 
 **Papers**:
 - [Code-mixed Sentiment and Hate-speech Prediction](https://arxiv.org/abs/2405.12929) (Yadav et al., 2024)
