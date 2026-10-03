@@ -1,5 +1,5 @@
 # Slovenian Language Technologies Overview
-A collaborative overview of the knowledge on large language models (LLMs), speech technologies, and other natural-language processing (NLP) technologies for Slovenian language. The overview is curated by the [CLARIN Knowledge Centre for South Slavic languages CLASSLA](https://www.clarin.si/info/k-centre/).
+A collaborative overview of the knowledge on large language models (LLMs), speech technologies, and other natural-language processing (NLP) technologies for Slovenian language. The overview primarily focuses on **open-source** resources, models, and research papers. The overview is curated by the [CLARIN Knowledge Centre for South Slavic languages CLASSLA](https://www.clarin.si/info/k-centre/).
 
 For an overview of freely-available datasets for Slovenian language, including general **text collections, and training and test datasets** for various NLP tasks, see the [Frequently-Asked Questions for Slovenian](https://www.clarin.si/info/k-centre/faq4slovene/), provided by CLASSLA. The FAQ also provides information about resources and technologies for linguistic annotation of Slovenian texts.
 
@@ -158,7 +158,7 @@ To be informed of new resources, technologies, events and projects for South Sla
 - follow CLARIN.SI on [X](https://x.com/ClarinSlovenia) and [LinkedIn](https://www.linkedin.com/company/clarin-si)
 - join the [Discord group "Slovenska skupnost za jezikovne vire in tehnologije"](https://discord.com/invite/vQDRpGMU7C)
 
-The main author and curator of this document is: Taja Kuzman (Department of Knowledge Technologies, Jožef Stefan Institute).
+The main author and curator of this document is: Taja Kuzman Pungeršek (Department of Knowledge Technologies, Jožef Stefan Institute).
 
 Special thanks also to other contributors:
 - Peter Rupnik (Department of Knowledge Technologies, Jožef Stefan Institute)
